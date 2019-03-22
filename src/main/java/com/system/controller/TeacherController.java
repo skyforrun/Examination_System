@@ -1,6 +1,6 @@
 package com.system.controller;
 
-import com.system.po.*;
+import com.system.pojo.*;
 import com.system.service.CourseService;
 import com.system.service.SelectedCourseService;
 import com.system.service.TeacherService;

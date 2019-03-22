@@ -1,4 +1,4 @@
-package com.system.po;
+package com.system.pojo;
 
 /**
  * Userlogin扩展类

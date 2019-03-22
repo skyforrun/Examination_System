@@ -1,8 +1,8 @@
 package com.system.service.impl;
 
-import com.system.po.PagingVO;
-import com.system.po.Student;
-import com.system.po.StudentCustom;
+import com.system.pojo.PagingVO;
+import com.system.pojo.Student;
+import com.system.pojo.StudentCustom;
 import com.system.service.StudentService;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,9 +16,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jacey on 2017/6/29.
- */
+
 public class StudentServiceImplTest {
 
 

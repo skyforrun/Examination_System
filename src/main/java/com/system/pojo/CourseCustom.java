@@ -1,9 +1,10 @@
-package com.system.po;
+package com.system.pojo;
 
 /**
- * teacher扩展类
+ * Course扩展类    课程
  */
-public class TeacherCustom extends Teacher {
+public class CourseCustom extends Course {
+
     //所属院系名
     private String collegeName;
 
@@ -14,4 +15,5 @@ public class TeacherCustom extends Teacher {
     public String getcollegeName() {
         return collegeName;
     }
+
 }

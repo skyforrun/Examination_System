@@ -1,7 +1,7 @@
 package com.system.mapper;
 
-import com.system.po.CourseCustom;
-import com.system.po.PagingVO;
+import com.system.pojo.CourseCustom;
+import com.system.pojo.PagingVO;
 
 import java.util.List;
 

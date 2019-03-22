@@ -1,6 +1,6 @@
 package com.system.service;
 
-import com.system.po.StudentCustom;
+import com.system.pojo.StudentCustom;
 
 import java.util.List;
 

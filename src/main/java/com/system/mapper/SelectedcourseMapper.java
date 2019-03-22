@@ -1,7 +1,7 @@
 package com.system.mapper;
 
-import com.system.po.Selectedcourse;
-import com.system.po.SelectedcourseExample;
+import com.system.pojo.Selectedcourse;
+import com.system.pojo.SelectedcourseExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

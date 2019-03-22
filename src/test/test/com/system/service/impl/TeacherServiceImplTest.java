@@ -1,7 +1,7 @@
 package com.system.service.impl;
 
-import com.system.po.Teacher;
-import com.system.po.TeacherCustom;
+import com.system.pojo.Teacher;
+import com.system.pojo.TeacherCustom;
 import com.system.service.TeacherService;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,9 +14,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jacey on 2017/6/29.
- */
+
 public class TeacherServiceImplTest {
     private ApplicationContext applicationContext;
     TeacherService teacherService;

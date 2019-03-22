@@ -1,7 +1,7 @@
 package com.system.mapper;
 
-import com.system.po.Student;
-import com.system.po.StudentExample;
+import com.system.pojo.Student;
+import com.system.pojo.StudentExample;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -11,10 +11,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- *
- *
- */
+
 public class StudentMapperTest {
 
     private ApplicationContext applicationContext;

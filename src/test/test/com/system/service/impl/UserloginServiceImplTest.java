@@ -1,6 +1,6 @@
 package com.system.service.impl;
 
-import com.system.po.Userlogin;
+import com.system.pojo.Userlogin;
 import com.system.service.TeacherService;
 import com.system.service.UserloginService;
 import org.junit.Before;
@@ -10,9 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jacey on 2017/6/30.
- */
+
 public class UserloginServiceImplTest {
 
     private ApplicationContext applicationContext;

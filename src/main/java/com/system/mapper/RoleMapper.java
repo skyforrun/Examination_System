@@ -1,7 +1,7 @@
 package com.system.mapper;
 
-import com.system.po.Role;
-import com.system.po.RoleExample;
+import com.system.pojo.Role;
+import com.system.pojo.RoleExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

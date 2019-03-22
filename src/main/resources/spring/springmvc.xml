@@ -2,16 +2,12 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd
-	http://www.springframework.org/schema/aop
-	http://www.springframework.org/schema/aop/spring-aop.xsd
-	http://www.springframework.org/schema/tx
-	http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
     <!--静态资源解析包括 ：js、css、img、..-->
     <!--<mvc:resources mapping="/js/" location="/js/**"/>-->
@@ -40,22 +36,15 @@
         </property>
     </bean>
 
-    <!--组件扫描，可以扫描 controller、Service、...
-    并注册添加到 spring 容器中
-    这里扫描 controller，指定controller的包
-    -->
+    <!--组件扫描，可以扫描 controller、Service、...并注册添加到 spring 容器中
+    这里扫描 controller，指定controller的包-->
     <context:component-scan base-package="com.system.controller"/>
 
-    <!--全局错误信息处理器
-    只要实现HandlerExceptionResolver接口就是全局异常处理器
-    -->
+    <!--全局错误信息处理器只要实现HandlerExceptionResolver接口就是全局异常处理器-->
     <bean class="com.system.exception.CustomExceptionResolver"/>
 
     <!--视图解析器-->
-    <!--
-    需要配置解析jsp的视图解析器
-    jsp解析，默认使用jstl标签解析
-    -->
+    <!--需要配置解析jsp的视图解析器jsp解析，默认使用jstl标签解析-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!--拼接视图地址的前缀和后缀-->
         <property name="prefix" value="/WEB-INF/jsp/"/>

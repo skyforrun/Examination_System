@@ -1,6 +1,6 @@
 package com.system.controller;
 
-import com.system.po.Userlogin;
+import com.system.pojo.Userlogin;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
@@ -8,15 +8,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-/**
- * Created by Jacey on 2017/6/30.
- */
 @Controller
 public class LoginController {
 
     //登录跳转
     @RequestMapping(value = "/login", method = {RequestMethod.GET})
-    public String loginUI() throws Exception {
+    public String loginUI() throws Exception{
         return "../../login";
     }
 

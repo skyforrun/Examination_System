@@ -1,8 +1,8 @@
 package com.system.mapper;
 
-import com.system.po.PagingVO;
-import com.system.po.StudentCustom;
-import com.system.po.TeacherCustom;
+import com.system.pojo.PagingVO;
+import com.system.pojo.StudentCustom;
+import com.system.pojo.TeacherCustom;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
@@ -12,9 +12,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jacey on 2017/6/29.
- */
+
 public class TeacherMapperCustomTest {
     private ApplicationContext applicationContext;
 

@@ -1,4 +1,4 @@
-package com.system.po;
+package com.system.pojo;
 
 public class Userlogin {
     private Integer userid;

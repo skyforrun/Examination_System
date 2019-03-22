@@ -1,6 +1,6 @@
 package com.system.mapper;
 
-import com.system.po.UserloginCustom;
+import com.system.pojo.UserloginCustom;
 
 /**
  *  UserloginMapper扩展类

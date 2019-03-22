@@ -1,7 +1,7 @@
 package com.system.mapper;
 
-import com.system.po.College;
-import com.system.po.CollegeExample;
+import com.system.pojo.College;
+import com.system.pojo.CollegeExample;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;

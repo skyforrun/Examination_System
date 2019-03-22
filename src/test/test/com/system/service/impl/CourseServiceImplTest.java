@@ -1,6 +1,6 @@
 package com.system.service.impl;
 
-import com.system.po.CourseCustom;
+import com.system.pojo.CourseCustom;
 import com.system.service.CourseService;
 import com.system.service.StudentService;
 import org.junit.Before;
@@ -10,9 +10,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jacey on 2017/7/5.
- */
 public class CourseServiceImplTest {
 
 

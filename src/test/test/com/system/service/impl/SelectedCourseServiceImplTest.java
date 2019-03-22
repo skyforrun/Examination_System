@@ -1,6 +1,6 @@
 package com.system.service.impl;
 
-import com.system.po.SelectedCourseCustom;
+import com.system.pojo.SelectedCourseCustom;
 import com.system.service.CourseService;
 import com.system.service.SelectedCourseService;
 import org.junit.Before;
@@ -12,9 +12,7 @@ import java.util.List;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Jacey on 2017/7/6.
- */
+
 public class SelectedCourseServiceImplTest {
 
 

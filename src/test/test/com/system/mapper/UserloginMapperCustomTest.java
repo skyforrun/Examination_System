@@ -1,15 +1,13 @@
 package com.system.mapper;
 
 
-import com.system.po.UserloginCustom;
+import com.system.pojo.UserloginCustom;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Created by Jacey on 2017/6/28.
- */
+
 public class UserloginMapperCustomTest {
 
     private ApplicationContext applicationContext;

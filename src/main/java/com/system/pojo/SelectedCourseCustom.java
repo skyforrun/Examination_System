@@ -1,4 +1,4 @@
-package com.system.po;
+package com.system.pojo;
 
 /**
  * Created by Jacey on 2017/6/29.
