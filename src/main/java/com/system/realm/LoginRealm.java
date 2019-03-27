@@ -15,9 +15,6 @@ import javax.annotation.Resource;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Created by Jacey on 2017/6/30.
- */
 
 @Component
 public class LoginRealm extends AuthorizingRealm{
@@ -32,6 +29,7 @@ public class LoginRealm extends AuthorizingRealm{
      * 获取身份信息，我们可以在这个方法中，从数据库获取该用户的权限和角色信息
      *     当调用权限验证时，就会调用此方法
      */
+    @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
 
         String username = (String) getAvailablePrincipal(principalCollection);
@@ -60,6 +58,7 @@ public class LoginRealm extends AuthorizingRealm{
      * 在这个方法中，进行身份验证
      *         login时调用
      */
+    @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         //用户名
         String username = (String) token.getPrincipal();

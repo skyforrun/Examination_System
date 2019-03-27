@@ -4,6 +4,8 @@ import com.system.exception.CustomException;
 import com.system.pojo.*;
 import com.system.service.*;
 import java.util.ArrayList;
+
+import com.system.service.impl.StudentServiceImpl;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,27 +14,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.annotation.Resource;
 import java.util.List;
 
-
-/**
- * Created by Jacey on 2017/6/30.
- */
 @Controller
 @RequestMapping("/admin")
 public class AdminController {
 
-    @Resource(name = "studentServiceImpl")
+    @Resource
     private StudentService studentService;
 
-    @Resource(name = "teacherServiceImpl")
+    @Resource
     private TeacherService teacherService;
 
-    @Resource(name = "courseServiceImpl")
+    @Resource
     private CourseService courseService;
 
-    @Resource(name = "collegeServiceImpl")
+    @Resource
     private CollegeService collegeService;
 
-    @Resource(name = "userloginServiceImpl")
+    @Resource
     private UserloginService userloginService;
 
     /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<学生操作>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/

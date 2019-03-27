@@ -11,13 +11,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.annotation.Resource;
 
-/**
- * Created by Jacey on 2017/7/6.
- */
+
 @Controller
 public class RestPasswordController {
 
-    @Resource(name = "userloginServiceImpl")
+    @Resource
     private UserloginService userloginService;
 
     // 本账户密码重置

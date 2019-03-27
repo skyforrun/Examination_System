@@ -2,16 +2,15 @@ package com.system.service;
 
 import com.system.pojo.Userlogin;
 
-/**
- *
- *
- */
+
 public interface UserloginService {
 
     //根据名字查找用户
+
     Userlogin findByName(String name) throws Exception;
 
     //保存用户登录信息
+
     void save(Userlogin userlogin) throws Exception;
 
     //根据姓名删除

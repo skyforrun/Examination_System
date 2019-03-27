@@ -14,20 +14,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import java.util.List;
 
-/**
- * Created by Jacey on 2017/7/5.
- */
+
 @Controller
 @RequestMapping(value = "/student")
 public class StudentController {
 
-    @Resource(name = "courseServiceImpl")
+    @Resource
     private CourseService courseService;
 
-    @Resource(name = "studentServiceImpl")
+    @Resource
     private StudentService studentService;
 
-    @Resource(name = "selectedCourseServiceImpl")
+    @Resource
     private SelectedCourseService selectedCourseService;
 
     @RequestMapping(value = "/showCourse")
