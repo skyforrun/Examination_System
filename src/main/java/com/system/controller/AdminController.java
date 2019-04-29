@@ -277,39 +277,32 @@ public class AdminController {
         model.addAttribute("pagingVO", pagingVO);
 
         return "admin/showCourse";
-
     }
 
     //添加课程
-    @RequestMapping(value = "/addCourse", method = {RequestMethod.GET})
+    @RequestMapping(value = "" +
+            "/addCourse", method = {RequestMethod.GET})
     public String addCourseUI(Model model) throws Exception {
-
         List<TeacherCustom> list = teacherService.findAll();
         List<College> collegeList = collegeService.finAll();
-
         model.addAttribute("collegeList", collegeList);
         model.addAttribute("teacherList", list);
-
         return "admin/addCourse";
     }
 
     // 添加课程信息处理
     @RequestMapping(value = "/addCourse", method = {RequestMethod.POST})
     public String addCourse(CourseCustom courseCustom, Model model) throws Exception {
-
         Boolean result = courseService.save(courseCustom);
-
         if (!result) {
             model.addAttribute("message", "课程号重复");
             return "error";
         }
-
-
         //重定向
         return "redirect:/admin/showCourse";
     }
 
-    // 修改教师信息页面显示
+    // 修改课程信息页面显示
     @RequestMapping(value = "/editCourse", method = {RequestMethod.GET})
     public String editCourseUI(Integer id, Model model) throws Exception {
         if (id == null) {
@@ -321,21 +314,16 @@ public class AdminController {
         }
         List<TeacherCustom> list = teacherService.findAll();
         List<College> collegeList = collegeService.finAll();
-
         model.addAttribute("teacherList", list);
         model.addAttribute("collegeList", collegeList);
         model.addAttribute("course", courseCustom);
-
-
         return "admin/editCourse";
     }
 
-    // 修改教师信息页面处理
+    // 修改课程信息页面处理
     @RequestMapping(value = "/editCourse", method = {RequestMethod.POST})
     public String editCourse(CourseCustom courseCustom) throws Exception {
-
         courseService.upadteById(courseCustom.getCourseid(), courseCustom);
-
         //重定向
         return "redirect:/admin/showCourse";
     }
@@ -355,9 +343,7 @@ public class AdminController {
     //搜索课程
     @RequestMapping(value = "selectCourse", method = {RequestMethod.POST})
     private String selectCourse(String findByName, Model model) throws Exception {
-
         List<CourseCustom> list = courseService.findByName(findByName);
-
         model.addAttribute("courseList", list);
         return "admin/showCourse";
     }
